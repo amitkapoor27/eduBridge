@@ -35,9 +35,12 @@ mongodb://XXX.XX.X.XX:27017/eduBridge_org
 ```sh
 npm run start
 ```
-Once the server is running, you can use an API client like Postman to make requests to the API.
+Once the server is running, you can use an API client like **Postman** to make requests to the API.
 
 By default, the server will be running on **`http://localhost:3000`**.
+
+## Endpoints
+###Trainers
 
 ## Author
 
