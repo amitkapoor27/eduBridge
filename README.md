@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to eduBridge 👋</h1>
+<h1 align="center">Trainer and Courses API 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -10,9 +10,24 @@
 
 ## Install
 
-```sh
+Clone the repository:
+
+```bash
+https://github.com/amitkapoor27/eduBridge.git
+```
+Install the dependencies:
+```bash
+cd eduBridge
 npm install
 ```
+## Set the following environment variables:
+
+**PORT** : The port on which the server should run (default: 3000).
+**MONGODB_URI**: The connection string for the MongoDB database.
+```sh
+mongodb://XXX.XX.X.XX:27017/eduBridge_org
+```
+**JWT_SECRET**: The secret key used for JWT authentication.
 
 ## Usage
 
@@ -29,6 +44,3 @@ npm run start
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
