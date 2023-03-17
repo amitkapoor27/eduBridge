@@ -132,6 +132,31 @@ Content-Type: application/json
     }
 ]
 ```
+### Gets a single trainer by ID.
+
+```http
+  GET /trainers:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "_id": "64132509117af78fcef7c887",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "expertise": "Course A",
+    "__v": 0
+}
+```
 ## Author
 
 👤 **Amit Kapoor**
