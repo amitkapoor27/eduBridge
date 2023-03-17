@@ -41,7 +41,6 @@ By default, the server will be running on **`http://localhost:3000`**.
 
 ## Endpoints
 
-## Endpoints
 
 #### Logs in a user and returns an authentication token.
 
