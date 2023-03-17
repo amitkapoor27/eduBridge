@@ -72,7 +72,7 @@ async function getTrainer(req, res, next) {
     let trainer;
     try {
       trainer = await Trainer.findById(req.params.id);
-      console.log(trainer);
+      
       if (!trainer) {
         return res.status(404).json({ message: 'Trainer not found' });
       }
