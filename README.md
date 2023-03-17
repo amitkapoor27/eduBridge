@@ -3,7 +3,9 @@
 
 This is a REST API for managing trainers and courses.
 
-## Install
+
+## Installation
+
 
 Clone the repository:
 
@@ -14,8 +16,9 @@ Install the dependencies:
 ```bash
 cd eduBridge
 npm install
-```
-## Set the following environment variables:
+```    
+## Environment Variables
+
 
 **PORT** : The port on which the server should run (default: 3000).
 
@@ -33,6 +36,8 @@ npm run start
 Once the server is running, you can use an API client like **Postman** to make requests to the API.
 
 By default, the server will be running on **`http://localhost:3000`**.
+
+
 
 ## Endpoints
 
