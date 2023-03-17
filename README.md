@@ -1,32 +1,20 @@
-<h1 align="center">Welcome to eduBridge 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
-</p>
 
-> This is a REST API for managing trainers and courses.
+# Trainer and Courses API
 
-## Install
+This is a REST API for managing trainers and courses.
+
+## Installation
 
 ```sh
 npm install
 ```
+## Set the following environment variables:
 
-## Usage
+*PORT*: The port on which the server should run (default: 3000).
 
-```sh
-npm run start
-```
+MONGODB_URI: The connection string for the MongoDB database.
 
-## Author
-
-👤 **Amit Kapoor**
-
-* Github: [@amitkapoor27](https://github.com/amitkapoor27)
-
-## Show your support
+JWT_SECRET: The secret key used for JWT authentication.
 
 Give a ⭐️ if this project helped you!
 
