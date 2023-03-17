@@ -158,7 +158,7 @@ Content-Type: application/json
 ### Create a trainer
 
 ```http
-  POST /trainers:id
+  POST /trainers
 ```
 ##### Headers
 
@@ -290,21 +290,20 @@ Authorization: Bearer your_authentication_token
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-[
-    {
-        "_id": "64146ad806a57f449d999765",
-        "title": "Course A",
-        "description": "Description A",
-        "trainerName": "Trainer A",
-        "__v": 0
-    }
-]
+  {
+      "_id": "64146ad806a57f449d999765",
+      "title": "Course A",
+      "description": "Description A",
+      "trainerName": "Trainer A",
+      "__v": 0
+  }
+
 ```
 
 ### Create a course
 
 ```http
-  POST /courses:id
+  POST /courses
 ```
 ##### Headers
 
@@ -350,9 +349,9 @@ Authorization: Bearer your_authentication_token
 ##### Request 
 ```body
 {
-    "name": "Jame Clark",
-    "email": "jameClark@example.com",
-    "expertise": "Course B"
+    "title": "Course C",
+    "description": "Description A Update",
+    "trainerName": "Trainer A"
 }
 ```
 
@@ -362,10 +361,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "_id": "6414632606a57f449d99975b",
-    "name": "Jame Clark",
-    "email": "jameClark@example.com",
-    "expertise": "Course B",
+    "_id": "64146c84deed5ba2c5293480",
+    "title": "Course C",
+    "description": "Description A Update",
+    "trainerName": "Trainer A",
     "__v": 0
 }
 ```
