@@ -41,7 +41,7 @@ By default, the server will be running on **`http://localhost:3000`**.
 
 ## Endpoints
 
-
+### Login
 #### Logs in a user and returns an authentication token.
 
 
@@ -52,13 +52,40 @@ By default, the server will be running on **`http://localhost:3000`**.
 
 ```headers
 Content-Type: application/json
-Authorization: Bearer your_authentication_token
 ```
 ##### Request 
 ```body
 {
   "email":"testuser@test.com",
   "password": "testpassword"
+}
+```
+
+##### Response 
+```body
+{
+  "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
+}
+```
+
+### Register
+#### Register a user and returns an authentication token.
+
+
+```http
+  POST /auth/register
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+```
+##### Request 
+```body
+{
+    "name": "testuser",
+    "email":"testuser@test.com",
+    "password": "testpassword"
 }
 ```
 
