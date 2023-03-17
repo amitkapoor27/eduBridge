@@ -62,7 +62,10 @@ Content-Type: application/json
 ```
 
 ##### Response 
+
 ```body
+HTTP/1.1 200 OK
+Content-Type: application/json
 {
   "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
 }
@@ -91,6 +94,9 @@ Content-Type: application/json
 
 ##### Response 
 ```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
 }
@@ -113,6 +119,9 @@ Authorization: Bearer your_authentication_token
 
 ##### Response 
 ```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 [
     {
         "_id": "64132509117af78fcef7c887",
@@ -123,7 +132,6 @@ Authorization: Bearer your_authentication_token
     }
 ]
 ```
-
 ## Author
 
 👤 **Amit Kapoor**
