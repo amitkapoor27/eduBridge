@@ -94,9 +94,35 @@ Content-Type: application/json
 {
   "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
 }
+``` 
+
+
+
+## Trainer
+### Get All Trainers
+
+```http
+  GET /trainers
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
 ```
 
-
+##### Response 
+```body
+[
+    {
+        "_id": "64132509117af78fcef7c887",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "expertise": "Course A",
+        "__v": 0
+    }
+]
+```
 
 ## Author
 
