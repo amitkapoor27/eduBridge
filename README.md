@@ -101,9 +101,6 @@ Content-Type: application/json
   "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
 }
 ``` 
-
-
-
 ## Trainer
 ### Get All Trainers
 
@@ -226,6 +223,174 @@ Content-Type: application/json
     "__v": 0
 }
 ```
+### Delete a trainer
+
+```http
+  DEL /trainers:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "message": "Trainer deleted"
+}
+```
+
+## Courses
+### Get All Courses
+
+```http
+  GET /courses
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+    {
+        "_id": "64146ad806a57f449d999765",
+        "title": "Course A",
+        "description": "Description A",
+        "trainerName": "Trainer A",
+        "__v": 0
+    }
+]
+```
+### Gets a single Course by ID.
+
+```http
+  GET /courses:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+    {
+        "_id": "64146ad806a57f449d999765",
+        "title": "Course A",
+        "description": "Description A",
+        "trainerName": "Trainer A",
+        "__v": 0
+    }
+]
+```
+
+### Create a course
+
+```http
+  POST /courses:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+##### Request 
+```body
+{
+    "title": "Course A",
+    "description": "Description A",
+    "trainerName": "Trainer A"
+}
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "title": "Course A",
+    "description": "Description A",
+    "trainerName": "Trainer A",
+    "_id": "64146ad806a57f449d999765",
+    "__v": 0
+}
+```
+
+
+### Update a course
+
+```http
+  PATCH /courses:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+##### Request 
+```body
+{
+    "name": "Jame Clark",
+    "email": "jameClark@example.com",
+    "expertise": "Course B"
+}
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "_id": "6414632606a57f449d99975b",
+    "name": "Jame Clark",
+    "email": "jameClark@example.com",
+    "expertise": "Course B",
+    "__v": 0
+}
+```
+### Delete a course
+
+```http
+  DEL /courses:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "message": "course deleted"
+}
+```
+
 ## Author
 
 👤 **Amit Kapoor**
