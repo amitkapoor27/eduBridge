@@ -191,6 +191,41 @@ Content-Type: application/json
     "__v": 0
 }
 ```
+
+
+### Update a trainer
+
+```http
+  PATCH /trainers:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+##### Request 
+```body
+{
+    "name": "Jame Clark",
+    "email": "jameClark@example.com",
+    "expertise": "Course B"
+}
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "_id": "6414632606a57f449d99975b",
+    "name": "Jame Clark",
+    "email": "jameClark@example.com",
+    "expertise": "Course B",
+    "__v": 0
+}
+```
 ## Author
 
 👤 **Amit Kapoor**
