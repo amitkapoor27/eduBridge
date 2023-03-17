@@ -1,12 +1,7 @@
-<h1 align="center">Trainer and Courses API 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
-</p>
 
-> This is a REST API for managing trainers and courses.
+# Trainer and Courses API
+
+This is a REST API for managing trainers and courses.
 
 ## Install
 
@@ -65,16 +60,17 @@ Authorization: Bearer your_authentication_token
 ##### Response 
 ```body
 {
-  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDEzMjM5ZDExN2FmNzhmY2VmN2M4N2UiLCJpYXQiOjE2Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
+  "token":"Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
 }
 ```
+
+
 
 ## Author
 
 👤 **Amit Kapoor**
 
 * Github: [@amitkapoor27](https://github.com/amitkapoor27)
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
