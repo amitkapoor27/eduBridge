@@ -40,7 +40,35 @@ Once the server is running, you can use an API client like **Postman** to make r
 By default, the server will be running on **`http://localhost:3000`**.
 
 ## Endpoints
-###Trainers
+
+## Endpoints
+
+#### Logs in a user and returns an authentication token.
+
+
+```http
+  POST /auth/login
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+##### Request 
+```body
+{
+  "email":"testuser@test.com",
+  "password": "testpassword"
+}
+```
+
+##### Response 
+```body
+{
+  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDEzMjM5ZDExN2FmNzhmY2VmN2M4N2UiLCJpYXQiOjE2Nzg5NzYxNzF9.DA7PLaee1KZdtNSG_wNXl2dc5e8BzgCcNfrA9ZhTkrs"
+}
+```
 
 ## Author
 
