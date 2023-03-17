@@ -15,6 +15,7 @@ router.get('/',authenticateToken, async (req, res) => {
 
 // Get a single trainer
 router.get('/:id',authenticateToken, getTrainer, (req, res) => {
+  console.log(res.trainer);
   res.json(res.trainer);
 });
 
@@ -71,13 +72,14 @@ async function getTrainer(req, res, next) {
     let trainer;
     try {
       trainer = await Trainer.findById(req.params.id);
+      console.log(trainer);
       if (!trainer) {
         return res.status(404).json({ message: 'Trainer not found' });
       }
     } catch (err) {
       return res.status(500).json({ message: err.message });
     }
-    res.locals.trainer = trainer;
+    res.trainer = trainer;
     next();
 }
 // Middleware to authenticate token
