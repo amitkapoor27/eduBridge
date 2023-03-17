@@ -1,7 +1,7 @@
 import { Router } from 'express';
 const router = Router();
 import Trainer  from '../models/trainer.js';
-import jwt from 'jsonwebtoken';
+import authenticateToken from '../middleware/verify.middleware.js';
 
 // Get all trainers
 router.get('/',authenticateToken, async (req, res) => {
@@ -81,20 +81,5 @@ async function getTrainer(req, res, next) {
     }
     res.trainer = trainer;
     next();
-}
-// Middleware to authenticate token
-function authenticateToken(req, res, next) {
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-  if (token == null) {
-    return res.sendStatus(401);
-  }
-  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-    if (err) {
-      return res.sendStatus(403);
-    }
-    req.user = user;
-    next();
-  });
 }
 export default router;

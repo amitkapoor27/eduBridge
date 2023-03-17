@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import Course from '../models/Course.js';
-import jwt from 'jsonwebtoken';
+import authenticateToken from '../middleware/verify.middleware.js';
 
 const router = Router();
 
