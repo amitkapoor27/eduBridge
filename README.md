@@ -157,6 +157,40 @@ Content-Type: application/json
     "__v": 0
 }
 ```
+
+### Create a trainer
+
+```http
+  POST /trainers:id
+```
+##### Headers
+
+```headers
+Content-Type: application/json
+Authorization: Bearer your_authentication_token
+```
+##### Request 
+```body
+{
+    "name": "John Clark",
+    "email": "johnclark@example.com",
+    "expertise": "Course B"
+}
+```
+
+##### Response 
+```body
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "name": "John Clark",
+    "email": "johnclark@example.com",
+    "expertise": "Course B",
+    "_id": "6414632606a57f449d99975b",
+    "__v": 0
+}
+```
 ## Author
 
 👤 **Amit Kapoor**
