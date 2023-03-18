@@ -1,9 +1,8 @@
 import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
-import jsonPkg  from 'body-parser';
 import {connect}  from 'mongoose';
-const {json} = jsonPkg;
+
 const app = express();
 dotenv.config();
 // enabling cors for all requests by using cors middleware
@@ -18,7 +17,7 @@ connect(process.env.MONGO_DB, {
 });
 
 // Parse JSON request bodies
-app.use(json());
+app.use(express.json());
 
 // Import the routes for each microservice
 import authRoutes from './routes/auth.js';
