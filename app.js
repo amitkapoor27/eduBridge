@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-
 import jsonPkg  from 'body-parser';
 import {connect}  from 'mongoose';
 const {json} = jsonPkg;
