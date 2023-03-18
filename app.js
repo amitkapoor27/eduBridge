@@ -6,8 +6,9 @@ import {connect}  from 'mongoose';
 const {json} = jsonPkg;
 const app = express();
 dotenv.config();
+
 // Connect to the database
-connect('mongodb://172.16.3.215:27017/eduBridge_org', {
+connect(process.env.MONGO_DB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
