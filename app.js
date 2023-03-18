@@ -1,10 +1,15 @@
 import express from 'express';
+import cors from "cors";
 import dotenv from 'dotenv';
 import jsonPkg  from 'body-parser';
 import {connect}  from 'mongoose';
 const {json} = jsonPkg;
 const app = express();
 dotenv.config();
+// enabling cors for all requests by using cors middleware
+app.use(cors());
+// Enable pre-flight
+app.options("*",cors());
 
 // Connect to the database
 connect(process.env.MONGO_DB, {
