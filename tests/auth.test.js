@@ -10,8 +10,8 @@ describe("Authentication Service", () => {
     describe("/POST /register", () => {
         it("should register a new user", async () => {
             const res = await chai.request(app).post("/auth/register").send({
-                name: "testuser6",
-                email: "testuser6@test.com",
+                name: "testuser",
+                email: "testuser@test.com",
                 password: "testpassword",
             });
             expect(res).to.have.status(201);
