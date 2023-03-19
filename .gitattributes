@@ -1,0 +1,10 @@
+# Node.js and Express.js files
+*.js linguist-language=JavaScript
+*.json linguist-language=JSON
+*.ejs linguist-language=HTML
+
+# MongoDB files
+*.bson linguist-language=MongoDB
+
+# Test files
+test/*.{js,json} linguist-language=JavaScript
